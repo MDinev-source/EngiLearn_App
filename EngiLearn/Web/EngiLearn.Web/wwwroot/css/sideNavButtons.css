@@ -1,0 +1,46 @@
+﻿#mySidenav a {
+    background-color: #FFD700;
+    position: fixed;
+    font-size: 15px;
+    text-decoration: none;
+    Color: black;
+    padding: 5px 4px 10px 20px;
+    border-radius: 0px 25px 25px 0px;
+    left: -105px;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+    #mySidenav a:hover {
+        left: 0;
+    }
+
+.sidenav i {
+    float: right;
+    padding-top: 5px
+}
+
+
+#first {
+    top: 250px;
+    width: 120px;
+    height: 35px;
+}
+
+#second {
+    top: 300px;
+    width: 120px;
+    height: 35px;
+}
+
+#third {
+    top: 350px;
+    width: 120px;
+    height: 35px;
+}
+
+#fourth {
+    top: 400px;
+    width: 120px;
+    height: 35px;
+}

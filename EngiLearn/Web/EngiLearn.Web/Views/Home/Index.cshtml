@@ -1,0 +1,27 @@
+﻿@{
+    this.ViewData["Title"] = "EngiLearn";
+}
+
+@section Styles{
+    <link href="@Url.Content("~/css/sideNavButtons.css")" rel="stylesheet" type="text/css" />
+}
+
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light background" id="zero">
+    <div class="col-md-5 p-lg-5 mx-auto my-5 text-white shd">
+        <h1 >@this.ViewData["Title"]</h1>
+        <p class="lead fw-normal">Вписва се кратко представяне на сайта. Уточнява се, че е сайта е за инженерни дейтности. Пример: Учи се от най-добрите курсове с най-съвремемнните технологии. Започенете отначало или повишете своята квалификация.</p>
+        <a class="btn btn-outline-light" href="#">Coming soon. Препратка към запознаване с курсовите, които предстоят (autocad, nx, solidedge и др.), какво се очаква от сайта и как е възникнала идеята за сайта (подробно описание - колко обичам да преподавам, колко са важни технологиите и знанието и т.н)</a>
+    </div>
+
+</div>
+
+<hr />
+<partial name="_ResumePartial" />
+
+<partial name="_SideNavButtonsPartial" />
+
+<hr />
+<partial name="_TopCoursesPartial" />
+
+<hr />
+<partial name="_ContactFormPartial" />

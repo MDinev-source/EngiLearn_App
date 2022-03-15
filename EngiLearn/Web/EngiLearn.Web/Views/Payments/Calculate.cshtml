@@ -1,0 +1,241 @@
+﻿@{
+    this.ViewData["Title"] = "Вашият избор";
+}
+
+@section Styles{
+    <link href="@Url.Content("~/css/accordionDetails.css")" rel="stylesheet" type="text/css" />
+}
+<div class="p-3 m-md-3 text-center bg-light">
+    <div class="my-2 py-2">
+        <h1>@this.ViewData["Title"]</h1>
+        <p>Разни детайли</p>
+    </div>
+
+    <div class="container pb-5">
+        <div class="accordionWrapper shadow">
+
+            <div>
+                <div class="row accordionItemHeading bg-white">
+                    <div class="col">
+                        <p>Текуща сума: 200лв</p>
+                    </div>
+                    <div class="col">
+                        <p>Отстъпка: 10%</p>
+                    </div>
+                    <div class="col">
+                        <p>Крайна сума: 180лв</p>
+                    </div>
+                    <div class="col text-end">
+                        <a class="btn btn-warning" href="#popup1">Завърши</a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="accordionItem open">
+                <div class="row accordionItemHeading">
+                    <div class="col">
+                        <h4 class="accordionItemHeading text-start">About accordions</h4>
+                    </div>
+                    <div class="col text-end">
+                        <a href="#" class="text-dark"><i class="fa-solid fa-trash-can text-white"></i></a>
+                    </div>
+                </div>
+                <div class="accordionItemContent">
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="card mb-4 box-shadow">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-normal">Pro</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h2 class="card-title pricing-card-title mt-2">$120 <small class="text-muted">/ year</small></h2>
+                                    <h4 class="card-title pricing-card-title mt-2">$10 <small class="text-muted">/ month</small></h4>
+                                    <h5>Какво включва абонамента:</h5>
+                                    <ul class="text-start mt-3 mb-4">
+                                        <li>едногодишен достъп</li>
+                                        <li>100 видеа</li>
+                                        <li>10 часа времетраене</li>
+                                        <li>5 теста</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <h4>Описание</h4>
+                            <p>JavaScript accordions let you squeeze a lot of content into a small space in a Web page.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordionItem close">
+                <div class="row accordionItemHeading">
+                    <div class="col">
+                        <h4 class="accordionItemHeading text-start">About accordions</h4>
+                    </div>
+                    <div class="col text-end">
+                        <a href="#" class="text-dark"><i class="fa-solid fa-trash-can text-white"></i></a>
+                    </div>
+                </div>
+                <div class="accordionItemContent">
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="card mb-4 box-shadow">
+                                <div class="card-header">
+                                    <h4 class="my-0 font-weight-normal">Pro</h4>
+                                </div>
+                                <div class="card-body">
+                                    <h2 class="card-title pricing-card-title mt-2">$120 <small class="text-muted">/ year</small></h2>
+                                    <h4 class="card-title pricing-card-title mt-2">$10 <small class="text-muted">/ month</small></h4>
+                                    <h5>Какво включва абонамента:</h5>
+                                    <ul class="text-start mt-3 mb-4">
+                                        <li>едногодишен достъп</li>
+                                        <li>100 видеа</li>
+                                        <li>10 часа времетраене</li>
+                                        <li>5 теста</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <h4>Описание</h4>
+                            <p>JavaScript accordions let you squeeze a lot of content into a small space in a Web page.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div id="popup1" class="overlay1">
+    <div class="popup" style="width:80%;">
+        <h2>Платежни детайли</h2>
+        <a class="close" href="#sameplace">&times;</a>
+        <div class="content " style="max-height:600px;">
+
+            <div class="card shadow-2-strong mb-2 mb-lg-0 " style="border-radius: 16px;">
+                <div class="card-body p-2">
+
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 col-xl-3 mb-2 mb-md-0">
+                            <form>
+                                <div class="d-flex flex-row pb-2">
+                                    <div class="d-flex align-items-center pe-2">
+                                        <input class="form-check-input"
+                                               type="radio"
+                                               name="radioNoLabel"
+                                               id="radioNoLabel1v"
+                                               value=""
+                                               aria-label="..."
+                                               checked />
+                                    </div>
+                                    <div class="rounded border w-100 p-2">
+                                        <p class="d-flex align-items-center mb-0">
+                                            <i class="fab fa-cc-mastercard fa-2x text-dark pe-2"></i>Credit
+                                            Card
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row pb-2">
+                                    <div class="d-flex align-items-center pe-2">
+                                        <input class="form-check-input"
+                                               type="radio"
+                                               name="radioNoLabel"
+                                               id="radioNoLabel2v"
+                                               value=""
+                                               aria-label="..." />
+                                    </div>
+                                    <div class="rounded border w-100 p-2">
+                                        <p class="d-flex align-items-center mb-0">
+                                            <i class="fab fa-cc-visa fa-2x fa-lg text-dark pe-2"></i>Debit Card
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <div class="d-flex align-items-center pe-2">
+                                        <input class="form-check-input"
+                                               type="radio"
+                                               name="radioNoLabel"
+                                               id="radioNoLabel3v"
+                                               value=""
+                                               aria-label="..." />
+                                    </div>
+                                    <div class="rounded border w-100 p-2">
+                                        <p class="d-flex align-items-center mb-0">
+                                            <i class="fab fa-cc-paypal fa-2x fa-lg text-dark pe-2"></i>PayPal
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-xl-6">
+                            <div class="row">
+                                <div class="col-12 col-xl-6">
+                                    <div class="form-outline mb-2 mb-xl-2">
+                                        <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
+                                               placeholder="John Smith" />
+                                        <label class="form-label" for="typeName">Name on card</label>
+                                    </div>
+
+                                    <div class="form-outline mb-2 mb-xl-2">
+                                        <input type="text" id="typeExp" class="form-control form-control-lg" placeholder="MM/YY" size="7" @*id="exp"*@ minlength="7" maxlength="7" />
+                                        <label class="form-label" for="typeExp">Expiration</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-6">
+                                    <div class="form-outline mb-2 mb-xl-2">
+                                        <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
+                                               placeholder="1111 2222 3333 4444" minlength="19" maxlength="19" />
+                                        <label class="form-label" for="typeText">Card Number</label>
+                                    </div>
+
+                                    <div class="form-outline mb-2 mb-xl-2">
+                                        <input type="password" id="typeText" class="form-control form-control-lg"
+                                               placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
+                                        <label class="form-label" for="typeText">Cvv</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="d-flex justify-content-between" style="font-weight: 500;">
+                                <p class="mb-2">Subtotal</p>
+                                <p class="mb-2">$23.49</p>
+                            </div>
+
+                            <div class="d-flex justify-content-between" style="font-weight: 500;">
+                                <p class="mb-0">Shipping</p>
+                                <p class="mb-0">$2.99</p>
+                            </div>
+
+                            <hr class="my-2">
+
+                            <div class="d-flex justify-content-between mb-2" style="font-weight: 500;">
+                                <p class="mb-2">Total (tax included)</p>
+                                <p class="mb-2">$26.48</p>
+                            </div>
+
+                            <button type="button" class="btn btn-warning">Checkout</button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="@Url.Content("~/js/accordionDetailsPayments.js")" type="text/javascript"></script>
+}

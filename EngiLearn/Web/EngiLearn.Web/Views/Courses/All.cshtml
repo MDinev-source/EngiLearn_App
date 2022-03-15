@@ -1,0 +1,406 @@
+﻿@{
+    this.ViewData["Title"] = "Всички курсове";
+}
+
+<div class="album p-3 m-md-3 text-center bg-light">
+    <div class="my-2 py-2">
+        <h1>@this.ViewData["Title"] (да се добави линк към премиум пакет) (да се напише "При записване на повече от 1 курс при текущата сесия получавате отстъпка от 10 процента, маркирайте желаните от вас курсове в горния ляв ъгъл, а за да рагледате инфо за курса кликнете на бутон "инфо"". Може и да направя бутон back to top</h1>
+        <div id="myBtnContainer">
+            <button class="btn btn-outline-warning active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn btn-outline-warning" onclick="filterSelection('free')">Free</button>
+            <button class="btn btn-outline-warning" onclick="filterSelection('solidWorks')">SolidWorks</button>
+            <button class="btn btn-outline-warning" onclick="filterSelection('solidEdge')">Solid Edge</button>
+            <button class="btn btn-outline-warning" onclick="filterSelection('autoCad')">AutoCAD</button>
+        </div>
+    </div>
+
+    <div class="container containerCourses ps-5 pe-5 pb-5 pt-3">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="filterDiv free solidWorks">
+                <div class="col">
+                    <div class="card shadow">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label float-start" for="flexRadioDefault1">
+                                Добави
+                            </label>
+                        </div>
+                        <div class="containerHover">
+                            <img src="~/pictures/test/solidworks-social_12.jpg" class="image" height="300" />
+                            <button type="button" class="btn btn-sm btn-outline-secondary price">Цена</button>
+                            <div class="overlay">
+                                <h2 class="card-title pricing-card-title mt-2">$120 <small class="text-muted">/ year</small></h2>
+                                <h4 class="card-title pricing-card-title mt-2">$10 <small class="text-muted">/ month</small></h4>
+                                <h5>Какво включва абонамента:</h5>
+                                <ul class="text-start mt-3 mb-4">
+                                    <li>едногодишен достъп</li>
+                                    <li>100 видеа</li>
+                                    <li>10 часа времетраене</li>
+                                    <li>5 теста</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card-body p-2">
+                            <p class="card-text">Курс SolidWork въведение free</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на качване</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на модифициране</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Статус: активен</small></li>
+                        </ul>
+                        <div class="card-body p-2">
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-sm btn-outline-secondary button" href="#popup1">Details</a>
+                                <a type="button" class="btn btn-sm btn-outline-secondary" asp-area="" asp-controller="Courses" asp-action="Themes">Play</a>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filterDiv free solidWorks">
+                <div class="col">
+                    <div class="card shadow">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label float-start" for="flexRadioDefault1">
+                                Добави
+                            </label>
+                        </div>
+                        <div class="containerHover">
+                            <img src="~/pictures/test/solidworks-social_12.jpg" class="image" height="300" />
+                            <button type="button" class="btn btn-sm btn-outline-secondary price">Цена</button>
+                            <div class="overlay">
+                                <h1 class="card-title pricing-card-title mt-2">$0 <small class="text-muted">/ mo</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    Включва абонамент за една година
+                                    <li>100 видеа</li>
+                                    <li>10 часа времетраене</li>
+                                    <li>5 тест</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card-body p-2">
+                            <p class="card-text">Курс SolidWork въведение free</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на качване</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на модифициране</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Статус: активен</small></li>
+                        </ul>
+                        <div class="card-body p-2">
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-sm btn-outline-secondary button" href="#popup1">Details</a>
+                                <a type="button" class="btn btn-sm btn-outline-secondary" asp-area="" asp-controller="Courses" asp-action="Themes">Play</a>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filterDiv solidWorks">
+                <div class="col">
+                    <div class="card shadow">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label float-start" for="flexRadioDefault1">
+                                Добави
+                            </label>
+                        </div>
+                        <div class="containerHover">
+                            <img src="~/pictures/test/solidworks-social_12.jpg" class="image" height="300" />
+                            <button type="button" class="btn btn-sm btn-outline-secondary price">Цена</button>
+                            <div class="overlay">
+                                <h1 class="card-title pricing-card-title mt-2">$20 <small class="text-muted">/ mo</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    Включва абонамент за една година
+                                    <li>100 видеа</li>
+                                    <li>10 часа времетраене</li>
+                                    <li>5 тест</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card-body p-2">
+                            <p class="card-text">Курс SolidWork за напреднали</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на качване</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на модифициране</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Статус: активен</small></li>
+                        </ul>
+                        <div class="card-body p-2">
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-sm btn-outline-secondary button" href="#popup1">Details</a>
+                                <a type="button" class="btn btn-sm btn-outline-secondary" asp-area="" asp-controller="Courses" asp-action="Themes">Play</a>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filterDiv solidWorks">
+                <div class="col">
+                    <div class="card shadow">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label float-start" for="flexRadioDefault1">
+                                Добави
+                            </label>
+                        </div>
+                        <div class="containerHover">
+                            <img src="~/pictures/test/solidworks-social_12.jpg" class="image" height="300" />
+                            <button type="button" class="btn btn-sm btn-outline-secondary price">Цена</button>
+                            <div class="overlay">
+                                <h1 class="card-title pricing-card-title mt-2">$60 <small class="text-muted">/ mo</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    Включва абонамент за една година
+                                    <li>100 видеа</li>
+                                    <li>10 часа времетраене</li>
+                                    <li>5 тест</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card-body p-2">
+                            <p class="card-text">Курс SolidWork за професионалисти</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на качване</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на модифициране</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Статус: активен</small></li>
+                        </ul>
+                        <div class="card-body p-2">
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-sm btn-outline-secondary button" href="#popup1">Details</a>
+                                <a type="button" class="btn btn-sm btn-outline-secondary" asp-area="" asp-controller="Courses" asp-action="Themes">Play</a>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filterDiv free solidEdge">
+                <div class="col">
+                    <div class="card shadow">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label float-start" for="flexRadioDefault1">
+                                Добави
+                            </label>
+                        </div>
+                        <div class="containerHover">
+                            <img src="~/pictures/test/solideEdge.png" class="image" height="300" />
+                            <button type="button" class="btn btn-sm btn-outline-secondary price">Цена</button>
+                            <div class="overlay">
+                                <h1 class="card-title pricing-card-title mt-2">$20 <small class="text-muted">/ mo</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    Включва абонамент за една година
+                                    <li>100 видеа</li>
+                                    <li>10 часа времетраене</li>
+                                    <li>5 тест</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card-body p-2">
+                            <p class="card-text">Курс SolidEdge въведение free</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на качване</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на модифициране</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Статус: активен</small></li>
+                        </ul>
+                        <div class="card-body p-2">
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-sm btn-outline-secondary button" href="#popup1">Details</a>
+                                <a type="button" class="btn btn-sm btn-outline-secondary" asp-area="" asp-controller="Courses" asp-action="Themes">Play</a>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filterDiv solidEdge">
+                <div class="col">
+                    <div class="card shadow">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label float-start" for="flexRadioDefault1">
+                                Добави
+                            </label>
+                        </div>
+                        <div class="containerHover">
+                            <img src="~/pictures/test/solideEdge.png" class="image" height="300" />
+                            <button type="button" class="btn btn-sm btn-outline-secondary price">Цена</button>
+                            <div class="overlay">
+                                <h1 class="card-title pricing-card-title mt-2">$30 <small class="text-muted">/ mo</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    Включва абонамент за една година
+                                    <li>100 видеа</li>
+                                    <li>10 часа времетраене</li>
+                                    <li>5 тест</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card-body p-2">
+                            <p class="card-text">Курс SolidEdge за начинаещи</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на качване</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на модифициране</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Статус: активен</small></li>
+                        </ul>
+                        <div class="card-body p-2">
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-sm btn-outline-secondary button" href="#popup1">Details</a>
+                                <a type="button" class="btn btn-sm btn-outline-secondary" asp-area="" asp-controller="Courses" asp-action="Themes">Play</a>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filterDiv solidEdge">
+                <div class="col">
+                    <div class="card shadow">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label float-start" for="flexRadioDefault1">
+                                Добави
+                            </label>
+                        </div>
+                        <div class="containerHover">
+                            <img src="~/pictures/test/solideEdge.png" class="image" height="300" />
+                            <button type="button" class="btn btn-sm btn-outline-secondary price">Цена</button>
+                            <div class="overlay">
+                                <h1 class="card-title pricing-card-title mt-2">$70 <small class="text-muted">/ mo</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    Включва абонамент за една година
+                                    <li>100 видеа</li>
+                                    <li>10 часа времетраене</li>
+                                    <li>5 тест</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card-body p-2">
+                            <p class="card-text">Курс SolidEdge за напреднали</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на качване</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на модифициране</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Статус: активен</small></li>
+                        </ul>
+                        <div class="card-body p-2">
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-sm btn-outline-secondary button" href="#popup1">Details</a>
+                                <a type="button" class="btn btn-sm btn-outline-secondary" asp-area="" asp-controller="Courses" asp-action="Themes">Play</a>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filterDiv autoCad">
+                <div class="col">
+                    <div class="card shadow">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label float-start" for="flexRadioDefault1">
+                                Добави
+                            </label>
+                        </div>
+                        <div class="containerHover">
+                            <img src="~/pictures/test/mc-2021-autocad-01.png" class="image" height="300" />
+                            <button type="button" class="btn btn-sm btn-outline-secondary price">Цена</button>
+                            <div class="overlay">
+                                <h1 class="card-title pricing-card-title mt-2">$60 <small class="text-muted">/ mo</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    Включва абонамент за една година
+                                    <li>100 видеа</li>
+                                    <li>10 часа времетраене</li>
+                                    <li>5 тест</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card-body p-2">
+                            <p class="card-text">Курс AutoCad за начинаещи</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на качване</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на модифициране</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Статус: активен</small></li>
+                        </ul>
+                        <div class="card-body p-2">
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-sm btn-outline-secondary button" href="#popup1">Details</a>
+                                <a type="button" class="btn btn-sm btn-outline-secondary" asp-area="" asp-controller="Courses" asp-action="Themes">Play</a>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filterDiv autoCad">
+                <div class="col">
+                    <div class="card shadow">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label float-start" for="flexRadioDefault1">
+                                Добави
+                            </label>
+                        </div>
+                        <div class="containerHover">
+                            <img src="~/pictures/test/mc-2021-autocad-01.png" class="image" height="300" />
+                            <button type="button" class="btn btn-sm btn-outline-secondary price">Цена</button>
+                            <div class="overlay">
+                                <h1 class="card-title pricing-card-title mt-2">$50 <small class="text-muted">/ mo</small></h1>
+                                <ul class="list-unstyled mt-3 mb-4">
+                                    Включва абонамент за една година
+                                    <li>100 видеа</li>
+                                    <li>10 часа времетраене</li>
+                                    <li>5 тест</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card-body p-2">
+                            <p class="card-text">Курс AutoCad за напреднали</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на качване</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Дата на модифициране</small></li>
+                            <li class="list-group-item p-0"><small class="text-muted">Статус: активен</small></li>
+                        </ul>
+                        <div class="card-body p-2">
+                            <div class="btn-group">
+                                <a type="button" class="btn btn-sm btn-outline-secondary button" href="#popup1">Details</a>
+                                <a type="button" class="btn btn-sm btn-outline-secondary" asp-area="" asp-controller="Courses" asp-action="Themes">Play</a>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<partial name="_CourseContentPartial" />
+
+@section Scripts{
+    <script src="@Url.Content("~/js/coursesFilter.js")" type="text/javascript"></script>
+}

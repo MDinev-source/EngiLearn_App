@@ -1,0 +1,33 @@
+﻿ol {
+    list-style: none;
+    counter-reset: steps;
+    text-align: start;
+}
+
+.mainSection {
+    overflow: auto;
+    height: 250px;
+    width: 100%;
+}
+
+ol li {
+    counter-increment: steps;
+}
+
+    ol li::before {
+        content: counter(steps);
+        margin-right: 0.5rem;
+        background: gold;
+        color: white;
+        width: 1.2em;
+        height: 1.2em;
+        border-radius: 50%;
+        display: inline-grid;
+        place-items: center;
+        line-height: 1.2em;
+    }
+
+ol ol li::before {
+    background: gray;
+}
+

@@ -1,0 +1,64 @@
+﻿
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    margin-top: 5px;
+
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    padding: 20px;
+    color: orange;
+    border-radius: 3px 0 0 3px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    border-radius: 0 3px 3px 0;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+        background-color: gold;
+    }
+
+/* Container for image text */
+.caption-container {
+    background-color: black;
+    padding: 2px 16px;
+    color: gold;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.5;
+}
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+
+.scroll {
+    margin: auto 0px auto 0px;
+    overflow-y: scroll;
+}
+
+.titleText {
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+  /*  color:white;*/
+}
